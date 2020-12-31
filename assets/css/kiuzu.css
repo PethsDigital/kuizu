@@ -1,10 +1,10 @@
 @font-face{
   font-family: gilory;
-  src: url(fonts/Gilroy-Bold.ttf);
+  src: url(../fonts/Gilroy-Bold.ttf);
 }
 @font-face{
   font-family: gilory-light;
-  src: url(fonts/Gilroy-Light.ttf);
+  src: url(../fonts/Gilroy-Light.ttf);
 }
 * {
  
@@ -60,7 +60,7 @@ border-radius: 9.882352828979492px;
 
 }
 .info2{
-    background-image: url(assets/img2/rec.png);
+    background-image: url(../images/rec.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -155,7 +155,7 @@ text-align: center;
     .swiper-slide {
       font-size: 18px;
       font-family: gilory-light;
-      background-image: url(assets/img2/rec.png);
+      background-image: url(../images/rec.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 45px;
@@ -261,7 +261,7 @@ h4{
  .swiper-slide p{
       font-size: 18px;
       font-family: gilory-light;
-      background-image: url(assets/img2/rec.png);
+      background-image: url(../images/rec.png);
     background-repeat: no-repeat;
     background-size: contain;
     }
@@ -375,8 +375,9 @@ footer{
   .swiper-slide {
     font-size: 18px;
     font-family: gilory-light;
-    background-image: url(assets/img2/rec.png);
+    background-image: url(../images/rec.png);
     background-repeat: no-repeat;
     background-size: contain;
     padding-bottom: 45px;
+}
 }
