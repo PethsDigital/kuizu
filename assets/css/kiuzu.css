@@ -261,7 +261,7 @@ h4{
  .swiper-slide p{
       font-size: 18px;
       font-family: gilory-light;
-      background-image: url(../images/rec.png);
+  
     background-repeat: no-repeat;
     background-size: contain;
     }
@@ -278,9 +278,10 @@ h4{
 }
   .logo{
       height: 50px;
-width: 120px;
-border-radius: 0px;
-float: left;
+      width: 80px;
+      transform: translateY(-4px);
+      border-radius: 0px;
+      float: left;
   }
   .intro{
     padding-top: 0px;
@@ -292,7 +293,7 @@ float: left;
     margin: 5px;
   }
   nav {
-    position: relative;
+    
   }
 
   .hamburger {
@@ -307,6 +308,8 @@ float: left;
   .nav-links {
     position: absolute;
     background: #0E1132;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
     flex-direction: column;
@@ -316,6 +319,8 @@ float: left;
     pointer-events: none;
     font-family: gilory-light;
     font-size: 16px;
+ 
+    padding: 0;
   }
   .nav-links.open {
     clip-path: circle(1000px at 90% -10%);
@@ -380,4 +385,48 @@ footer{
     background-size: contain;
     padding-bottom: 45px;
 }
+}
+.support h1{
+  font-size: 40px;
+}
+.support h3{
+  font-size: 20px;
+}
+center h1{
+  font-size:50px ;
+}
+center h3{
+ font-size: 25px;
+}
+@media (max-width:500px){
+  footer{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .download2 h1{
+    font-size: 25px;
+  }
+  .text p{
+    font-size: 17px;
+  }
+  .features h1{
+    font-size: 25px;
+  }
+  .group img{
+    width: 96%;
+    margin: auto;
+    display: block;
+  }
+  .support h1{
+    font-size: 25px;
+  }
+  .support h3{
+    font-size: 16px;
+  }
+  center h1{
+    font-size:30px;
+  }
+  center h3{
+   font-size: 18px;
+  }
 }
