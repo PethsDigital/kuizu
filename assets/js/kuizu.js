@@ -9,6 +9,15 @@ hamburger.addEventListener("click", () => {
     link.classList.toggle("fade");
   });
 })
+
+links.forEach(link=>{
+ link.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+      link.classList.toggle("fade");
+    });
+  })
+}) 
 //Slider
  var swiper = new Swiper('.swiper-container', {
       pagination: {
