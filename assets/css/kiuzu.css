@@ -67,12 +67,15 @@ border-radius: 9.882352828979492px;
     padding: 20px;
 }
 .column3 {
-  flex: 33.33%;
+
+    display: flex;
+    width: 33.33%;
+  
   padding: 20px;
 }
 .column3 img{
   margin: 15px;
-  float: left;
+
 }
 .column3 p{
   font-size: 16px;
@@ -244,8 +247,9 @@ h4{
   padding: 0px;
 }
 .column3{
-  flex: 100%;
+  width: 100%;
   padding: 10px;
+  margin-top: 20px;
 }
 .column4 {
   float: left;
@@ -430,3 +434,4 @@ center h3{
    font-size: 18px;
   }
 }
+
