@@ -11,7 +11,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+.swiper-slide p{
 
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
 body{
   background: #0E1132;
   color: white;
@@ -302,7 +306,7 @@ h4{
  .swiper-slide p{
       font-size: 18px;
       font-family: gilory-light;
-  
+      margin-bottom: 20px;
     background-repeat: no-repeat;
     background-size: contain;
     }
@@ -503,3 +507,13 @@ center h3{
      margin-right: 0;
    }
  } 
+
+ 
+element.style {
+  width: 989px;
+}
+@media only screen and (max-width: 1024px){
+.swiper-slide {
+    background: none;
+}
+}
