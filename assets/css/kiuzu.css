@@ -256,6 +256,7 @@ h4{
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+    margin-bottom: 20px;
   }
   .group img{
     width: 350px;
@@ -269,6 +270,7 @@ h4{
   flex: 100%;
   text-align: center;
   margin: auto;
+  margin-bottom: 20px;
 }
 .column2 img{
     width: 300px;
