@@ -210,5 +210,17 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="assets/js/nav.js"></script>
 <!-- <script src="assets/js/kuizu.js"></script> -->
+<script>
+    //Slider
+ var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+    });
+</script>
 </body>
 </html>

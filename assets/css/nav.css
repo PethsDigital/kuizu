@@ -77,8 +77,7 @@ nav .nav_container .nav_content ul li a {
   font-weight: 400;
 }
 nav .nav_container .nav_content ul li a:hover {
-  color: black;
-  font-weight: bold;
+  text-decoration: underline;
 }
 nav .nav_container .nav_content ul button {
   padding: 0px 0psx;
