@@ -298,6 +298,10 @@ main div .explain {
 }
 main div .explain a {
   color: white;
+  text-decoration: none;
+}
+main div .explain a:hover {
+  text-decoration: underline;
 }
 main div .explain2 {
   font-size: 15px;
@@ -306,6 +310,13 @@ main div .explain2 {
   font-family: gilory-light;
   line-height: 32px;
   margin-bottom: 20px;
+}
+main div .explain2 a {
+  color: white;
+  text-decoration: none;
+}
+main div .explain2 a:hover {
+  text-decoration: underline;
 }
 @media screen and (max-width: 500px) {
   main div .explain2 {

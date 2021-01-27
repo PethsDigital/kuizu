@@ -382,8 +382,12 @@ main{
           
          }
          a{
-           color: white;
-         }
+          color: white;
+          text-decoration: none;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
       }
       .explain2{
         font-size: 15px;
@@ -392,6 +396,13 @@ main{
         font-family: gilory-light;
         line-height: 32px;
         margin-bottom: 20px;
+        a{
+          color: white;
+          text-decoration: none;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
         @include mq(500px){
          font-size: 13px;
          width: 100%;
