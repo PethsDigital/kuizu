@@ -249,7 +249,7 @@ nav .close .line3 {
 main {
   width: 85%;
   margin: auto;
-  margin-top: 140px;
+  margin-top: 100px;
 }
 @media screen and (max-width: 500px) {
   main {
@@ -259,23 +259,85 @@ main {
 main .topic {
   font-size: 28px;
   font-family: gilroy;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 500px) {
   main .topic {
     font-size: 24px;
+    margin-bottom: 25px;
   }
 }
-main .explain {
-  font-size: 16px;
+main div {
+  width: 100%;
+  margin-bottom: 30px;
+}
+main div .intro {
+  font-size: 19px;
+  font-family: gilroy;
+  margin-bottom: 15px;
+  text-align: left;
+}
+@media screen and (max-width: 500px) {
+  main div .intro {
+    font-size: 16px;
+  }
+}
+main div .explain {
+  font-size: 15px;
   color: white;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
   font-family: gilory-light;
   line-height: 32px;
 }
 @media screen and (max-width: 500px) {
-  main .explain {
-    font-size: 14px;
+  main div .explain {
+    font-size: 13px;
+    width: 100%;
+  }
+}
+main div .explain a {
+  color: white;
+}
+main div .explain2 {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 0px;
+  font-family: gilory-light;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+  main div .explain2 {
+    font-size: 13px;
+    width: 100%;
+  }
+}
+main div .extra {
+  margin-top: 20px;
+}
+main div ol {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 500px) {
+  main div ol {
+    width: 90%;
+  }
+}
+main div ol li {
+  margin-bottom: 10px;
+  line-height: 32px;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 0px;
+  font-family: gilory-light;
+  line-height: 32px;
+}
+@media screen and (max-width: 500px) {
+  main div ol li {
+    font-size: 13px;
     width: 100%;
   }
 }
