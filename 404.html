@@ -42,15 +42,31 @@
              display: block;
          }
     </style>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2F5BE7"/>   
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+            var routes = {
+                "/python": "https://docs.google.com/document/d/1PwlQZHltm7iOIPIcEGlU4kZujOMvV__mY4Q7o4ysIDs/edit?usp=drivesdk",
+                "/web":"https://docs.google.com/document/d/1PwlQZHltm7iOIPIcEGlU4kZujOMvV__mY4Q7o4ysIDs/edit?usp=drivesdk",
+            };
+            if (routes[location.pathname]) {
+                location.replace(routes[location.pathname]);
+            }
+        });
+        document.body.style.display = 'block';
+    </script>
 </head>
-<body>
 
+
+    <body class="x-hidden has-sticky-header" id="hidden">
+
+        
     <div>
         <p class="big">404</p>
         <p class="small" >oops! we can't seam to find the page you are looking for</p>
         <a href="https://kuizu.xyz/">Click here to visit homepage</a>
     </div>
    
-    
 </body>
 </html>
