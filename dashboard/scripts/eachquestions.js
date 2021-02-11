@@ -1,6 +1,7 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString)
 const product = urlParams.get('questionid')
+let form = document.querySelector('form')
 
 
 const loaderprofile = ()=>{
@@ -32,6 +33,12 @@ const loaderprofile = ()=>{
         return data.data.correctOptionIndex == opts.indexOf(opt)
       })
       cor[0].style.background='rgb(143, 240, 143)'
+      form.question.value=data.data.question
+
+      // form.correct.value=data.data.options[0]
+      // form.Incorrect1.value=data.data.options[1]
+      // form.Incorrect2.value=data.data.options[2]
+      // form.Incorrect3.value=data.data.options[3]
 
 
       let correct =document.querySelector('.question p')
@@ -57,6 +64,7 @@ loaderprofile()
 
 let accept = document.querySelector('.accept')
 let reject = document.querySelector('.reject')
+let edit = document.querySelector('.edit')
 
 
 accept.addEventListener('click',()=>{
@@ -76,6 +84,9 @@ accept.addEventListener('click',()=>{
       console.log(result)
       // loader(result)
       accept.textContent = 'Question Accepted'
+      // accept.disabled=true
+      // reject.disabled=true
+      // edit.disabled=true
     })
     .catch(error => console.log('error', error));
 })
@@ -96,6 +107,20 @@ reject.addEventListener('click',()=>{
     .then(result => {
       console.log(result)
       reject.textContent='Question Deleted'
+      accept.disabled=true
+      reject.disabled=true
+      edit.disabled=true
+      
+
+      const myFunction=()=> {
+        setTimeout(()=>{
+          location.href='questions.html'
+        }, 3000);
+      }
+      myFunction()
+
+
+
       // loader(result)
    
     })

@@ -28,7 +28,8 @@ const searchFill = ()=>{
 searchFill()
 
 
-let form = document.querySelector('form')
+
+
 
 
 form.addEventListener('submit',(e)=>{

@@ -5,7 +5,7 @@ const bodyall = document.querySelector('body');
 
 
 ham.addEventListener('click', () => {
-
+ 
     if (ham.className === 'hamburger') {
         ham.classList.add('close');
       } else if (ham.className === 'hamburger close') {
