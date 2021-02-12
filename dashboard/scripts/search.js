@@ -61,7 +61,11 @@ selectTwo.addEventListener('change',()=>{
   
       const loader=(data) =>{
         tbody.innerHTML = "";
-          let eachdata = data
+          let eachdata2 = data
+
+        let eachdata = eachdata2.filter((item)=>{
+          return !item.is_approved
+        })
         
           
           for (let i = 0; i < eachdata.length; i++) {
