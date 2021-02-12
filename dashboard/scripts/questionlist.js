@@ -44,6 +44,7 @@ let fillselect = (page)=>{
     const loader=(data) =>{
  
       fillselect(data.data.noofPages)
+      console.log(data.data.noofPages)
       tbody.innerHTML = "";
         let eachdata2 = data.data.questions
         console.log(eachdata2)
