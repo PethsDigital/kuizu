@@ -72,7 +72,8 @@ form.addEventListener('submit',(e)=>{
       const  raw = {
         "question": form.question.value,
         "options" : shuffledOption,
-        "correctOptionIndex": index2
+        "correctOptionIndex": index2,
+        "is_approved":true
     }
       console.log(JSON.stringify(raw),)
       var requestOptions = {
@@ -101,7 +102,7 @@ form.addEventListener('submit',(e)=>{
     const myFunction=()=> {
       setTimeout(()=>{
         location.reload()
-      }, 3000);
+      }, 2000);
   }
 
 })

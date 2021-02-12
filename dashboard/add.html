@@ -9,24 +9,27 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    
     <link rel="shortcut icon" href="image/attack3.jpg" type="image/x-icon">
     <title>Anime</title>
     <link rel="stylesheet" href="styles/list.css">
     <link rel="stylesheet" href="styles/admin.css">
-    <link rel="stylesheet" href="styles/select.css">
     <link rel="stylesheet" href="styles/loader.css">
-   
-    
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <style>
+        body{
+            background-color: white;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-
-    <div class="spinner">
-        <div></div>
-        <div></div>
+    <div class="spinnerContainer">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+        </div> 
     </div>
-
-
+    
     <nav>
 
         <div class="nav">
@@ -65,14 +68,14 @@
                     </a>
                 </div>
 
-                <div class="project srd  active">
+                <div class="project srd">
                     <a href="flagged.html" class="project">
                         
                         <p class="txt">Flagged Questions</p>
                     </a>
                 </div>
 
-                <div class="project srd">
+                <div class="project srd active">
                     <a href="add.html" class="project">
                         
                         <p class="txt">Add Questions</p>
@@ -87,72 +90,30 @@
         </div>
         
         <section class="second">
-
-            <div class="containerover">
-                <div class="pagename">
-                    <p>Flagged Questions</p>
-                    <form class="formsearcho" action="">
-                        <select class="searf" type="text" name="searcherr" placeholder="Search">
-                            <option value="">Select Category</option>
-                        </select>
-                        <input type="submit" hidden>
-                    </form>
-                </div>
-                <div class="overflowtable flipped"  >
-
-                    <table>
-                        <thead>
-
-                            <tr class="studhead">
-                                <th>S/N</th>
-                                <th>Question</th>
-                                <th>Category</th>
-                                <th>Actions</th>
-                            </tr>
-
-                        </thead>
-                        
-                        <tbody>
-
-                      
-         
-        
-    
-                        
-
-                        </tbody>
-    
-                      
-    
-                        
-                    </table>
-
-                    
-
-                </div>
-
-                <div class="percen">
-                    <div class="flez">
-                        <p class="sel">Select Page</p>
-                        <select class="selector" name="page" id="page">
-                           
-                            <!-- <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option> -->
-                        </select>
-
-                    </div>
-                    
-                </div>
-                   
-                    
-             
+            <div class="container">
+                <div class="contact-box">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2>Add Question</h2>
+                        <form action="">
+                            <textarea placeholder="Question" name="question" class="field"></textarea>
                 
-
-
+                            <select required name="cate" class="field" id="">
+                                <option value="">Select Category</option>
+                            </select>
+                            <input name="correct" type="text" required class="field" placeholder="Correct Option">
+                            <input name="incorrect1" type="text" required class="field" placeholder="Incorrect Option">
+                            <input name="incorrect2" type="text" required class="field" placeholder="Incorrect Option">
+                            <input name="incorrect3" type="text" required class="field" placeholder="Incorrect Option">
+                            
+                            <button type="submit" class="btn">Send</button>
+        
+                        </form>
+                        
+                    </div>
+                </div>
             </div>
-              
+         
         </section>
 
 
@@ -161,16 +122,12 @@
 
 
 
-
     <script src="scripts/nav.js"></script>  
     <script src="scripts/token.js"></script>
-    <script src="scripts/searchflag.js"></script>
-    <script src="scripts/flaggedquestionlist.js"></script>
     <script src="scripts/loader.js"></script>
     <script src="scripts/cleartoken.js"></script>
- 
-    
-    
+    <script src="scripts/addquestion2.js"></script>
+        
     
 </body>
 </html>
