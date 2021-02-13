@@ -32,7 +32,7 @@ let fillselect = (page)=>{
       redirect: 'follow'
     };
     
-    fetch(`https://kuizuapp.herokuapp.com/v1/questions/page/${page}`, requestOptions)
+    fetch(`https://kuizuapp.herokuapp.com/v1/questions/page/${page}?is_approved=false`, requestOptions)
       .then(response => response.json())
       .then(result => {
       
@@ -46,12 +46,12 @@ let fillselect = (page)=>{
       fillselect(data.data.noofPages)
       console.log(data.data.noofPages)
       tbody.innerHTML = "";
-        let eachdata2 = data.data.questions
-        console.log(eachdata2)
-        let eachdata = eachdata2.filter((item)=>{
-          return !item.is_approved
-        })
-        console.log(eachdata)
+        let eachdata = data.data.questions
+        // console.log(eachdata2)
+        // let eachdata = eachdata2.filter((item)=>{
+        //   return !item.is_approved
+        // })
+        // console.log(eachdata)
 
       
         
