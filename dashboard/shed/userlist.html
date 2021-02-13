@@ -10,24 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../image/attack3.jpg" type="image/x-icon">
-    
     <title>Anime</title>
     <link rel="stylesheet" href="../styles/list.css">
     <link rel="stylesheet" href="../styles/admin.css">
-    <link rel="stylesheet" href="../styles/eachflag.css">
+    <link rel="stylesheet" href="../styles/adminlist.css">
     <link rel="stylesheet" href="../styles/loader.css">
-    
-   
-    
 </head>
 <body>
-
-    <div class="spinner">
-        <div></div>
-        <div></div>
+    <div class="spinnerContainer">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+        </div> 
     </div>
-
-
+    
     <nav>
 
         <div class="nav">
@@ -66,7 +62,7 @@
                     </a>
                 </div>
 
-                <div class="project srd active">
+                <div class="project srd">
                     <a href="flagged.html" class="project">
                         
                         <p class="txt">Flagged Questions</p>
@@ -86,13 +82,13 @@
                         <p class="txt">Admin List</p>
                     </a>
                 </div>
-
-                <div class="project srd">
+                <div class="project srd active">
                     <a href="userlist.html" class="project">
                         
                         <p class="txt">User List</p>
                     </a>
                 </div>
+
 
                 <div class="project srd">
                     <a href="addadmin.html" class="project">
@@ -108,12 +104,6 @@
                     </a>
                 </div>
 
-                
-
-                
-
-                
-
 
             </div>
 
@@ -122,26 +112,61 @@
         </div>
         
         <section class="second">
-            
-            <div class="question">
-                <p>Who killed Naruto's father</p>
-            </div>
-            <div class="option incorrect1 opt">
-                <p>Naruto</p>
-            </div>
-            <div class="option incorrect2 opt">
-               <p>Sasuke</p>
-            </div>
-            <div class="option incorrect3 opt">
-               <p>Obuki</p>
-            </div>
-            <div class="option incorrect4 opt">
-                <p>Fox</p>
-            </div>
 
-            <div class="but">
-                <button class="accept">Unflag</button>
-                <button class="reject">Delete</button>
+            <div class="containerover">
+                <div class="pagename">
+                    <p>Question List</p>
+                    <form class="formsearcho" action="">
+                        
+                      <button class="addadmin">Add Admin</button>
+                    </form>
+                </div>
+                <div class="overflowtable flipped"  >
+
+                    <table>
+                        <thead>
+
+                            <tr class="studhead">
+                                <th>S/N</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                
+                            </tr>
+
+                        </thead>
+                        
+                        <tbody>
+
+                         
+         
+                        
+
+                        </tbody>
+    
+                      
+    
+                        
+                    </table>
+
+                    
+
+                </div>
+
+<!--                
+                <div class="percen">
+                    <div class="flez">
+                        <p class="sel">Select Page</p>
+                        <select class="selector" name="page" id="page">
+                           
+                    
+                        </select>
+
+                    </div>
+                    
+                </div>
+                 -->
+
+
             </div>
               
         </section>
@@ -152,10 +177,9 @@
 
 
 
-
     <script src="../scripts/nav.js"></script>  
     <script src="../scripts/token.js"></script>
-    <script src="../scripts/eachflaggedquestions.js" ></script>
+    <script src="../scripts/userlist.js"></script>
     <script src="../scripts/loader.js"></script>
     <script src="../scripts/cleartoken2.js"></script>
     
