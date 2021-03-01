@@ -1,0 +1,11 @@
+<script>
+window.onload = function () {
+  if (/android/i.test(navigator.userAgent)) {
+    window.location.href = "https://play.google.com/store/apps/details?id=com.pethsdigital.kuizu";
+  } else if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+    window.location.href = "https://apps.apple.com/us/app/kuizu/id1554593501#?platform=iphone";
+  } else {
+    window.location.href = "https://kuizu.xyz";
+  }
+};
+</script>
