@@ -3,8 +3,12 @@
 if (/android/i.test(navigator.userAgent)) {
   window.location.href = "https://fb.com";
 }
-if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+else if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
   window.location.href = "https://twitter.com";
+}
+else {
+  window.location.href = "https://google.com";
+
 }
   }
 </script>
